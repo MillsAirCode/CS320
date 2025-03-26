@@ -16,9 +16,9 @@
 > To set up the project locally, follow these steps:
 >
 > 1. Prerequisites:
->    - Java Development Kit (JDK) [specify version, e.g., 17] installed
+>    - Java Development Kit (JDK) [specify version, 17] installed
 >    - Maven or Gradle (depending on your build tool) [specify version]
->    - [Add any other dependencies, e.g., Selenium, TestNG, etc., once files are scanned]
+>    - JUnit as the testing framework
 >
 > 2. Clone the Repository:
 >    git clone [your-repo-url]
@@ -39,16 +39,23 @@
 > # Run all tests
 > mvn test
 >
-> # Run a specific test suite (example)
-> mvn test -Dtest=TestSuiteName
+> # Run a specific test suite
+> mvn test -Dtest=CalculatorTestSuite
+> # Executes the CalculatorTestSuite, which tests basic arithmetic operations like addition and subtraction.
 >
-> [Add specific usage examples based on your Java files once provided, e.g., how to execute a Selenium script or generate a report.]
+> # Run a single test class
+> mvn test -Dtest=LoginValidationTest
+> # Runs the LoginValidationTest class to verify user authentication logic with mocked credentials.
+>
+> # Generate a test report
+> mvn surefire-report:report
+> # Produces an HTML report of test results, saved in the 'target/site' directory.
 >
 > Features
-> - Automated test execution for [specify what, e.g., UI, API, unit tests]
-> - Integration with [list frameworks/tools, e.g., JUnit, Selenium, etc.]
+> - Automated test execution for [specify what, UI, API, unit tests]
+> - Integration with JUnit
 > - Customizable test configurations
-> - Detailed reporting [specify format, e.g., HTML, XML]
+> - Detailed reporting [specify format, HTML, XML]
 > - [Add more features based on your project once files are analyzed]
 >
 > Project Structure
@@ -65,11 +72,8 @@
 > [This is a placeholder structure; I’ll refine it once I can scan your Java files.]
 >
 > Testing Frameworks
-> This project leverages the following frameworks:
-> - [e.g., JUnit 5] for unit testing
-> - [e.g., TestNG] for test management
-> - [e.g., Selenium WebDriver] for browser automation
-> - [Add more based on your files once provided]
+> This project leverages the following framework:
+> - JUnit for unit testing
 >
 > Contributing
 > We welcome contributions! To get started:
@@ -80,10 +84,10 @@
 > 5. Open a pull request.
 >
 > License
-> [Specify your license, e.g., MIT, Apache 2.0, etc., once decided.]
+> This project is licensed under the MIT License.
 >
 > ---
-> Note: This README is a template for a Java-based testing and automation project. Please provide the actual Java files or specific details about your project (e.g., frameworks used, test types, or key classes) so I can generate a more precise and detailed README by scanning them.
+> Note: This README is a template for a Java-based testing and automation project. Please provide the actual Java files or specific details about your project (frameworks used, test types, or key classes) so I can generate a more precise and detailed README by scanning them.
 
 
 CS-320 Software Test Automation & QA
