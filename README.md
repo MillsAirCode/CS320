@@ -16,8 +16,8 @@
 > To set up the project locally, follow these steps:
 >
 > 1. Prerequisites:
->    - Java Development Kit (JDK) [specify version, 17] installed
->    - Maven or Gradle (depending on your build tool) [specify version]
+>    - Java Development Kit (JDK) [17.1] installed
+>    - Maven
 >    - JUnit as the testing framework
 >
 > 2. Clone the Repository:
@@ -26,8 +26,6 @@
 >
 > 3. Install Dependencies:
 >    mvn install  # If using Maven
->    # OR
->    gradle build  # If using Gradle
 >
 > 4. Verify Setup:
 >    Run a sample test to ensure everything is configured correctly:
@@ -87,7 +85,6 @@
 > This project is licensed under the MIT License.
 >
 > ---
-> Note: This README is a template for a Java-based testing and automation project. Please provide the actual Java files or specific details about your project (frameworks used, test types, or key classes) so I can generate a more precise and detailed README by scanning them.
 
 
 CS-320 Software Test Automation & QA
